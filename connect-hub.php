@@ -5,6 +5,12 @@ if(!$fgmembersite->CheckLogin())
 {
     $fgmembersite->RedirectToURL("login.php");
     exit;
+} else if(isset($_POST['submitted']))
+{
+   if($fgmembersite->BroadcastMessage())
+   {
+        $fgmembersite->RedirectToURL("broadcast-sent.html");
+   }
 }
 ?>
 <?php include 'php-calendar/calendar.php'; ?>
@@ -41,12 +47,13 @@ if(!$fgmembersite->CheckLogin())
 <div class="mainContent">
 	<div class="connect-left">
 		<div class="message-div">
-		<form id='login' action='<?php echo $fgmembersite->GetSelfScript(); ?>' method='post' accept-charset='UTF-8'>
+		<form id='broadcast' action='<?php echo $fgmembersite->GetSelfScript(); ?>' method='post' accept-charset='UTF-8'>
+			<input type='hidden' name='submitted' id='submitted' value='1'/>
+			<input type='hidden' name='hashtag' id='hashtag' value='#kisii'/>
 			<b>Broadcast A Message</b><br/>
-			<textarea name="messageText" class="message-text-field" rows="5" placeholder="Enter your message here"></textarea><br/>
-			<span style="float:left">Channels</span>
-			<span style="float:right"><button type="button">Send Now</button><button type="button">Schedule</button></span><br/>
-			<a href="">#expectantMothers</a>, <a href="">#newMothers</a><br />
+			<textarea form="broadcast" name="messageText" id="messageText" class="message-text-field" rows="5" placeholder="Enter your message here"></textarea><br/>
+			<span style="float:left">Channels</span><span style="float:right"><button type='submit'>Send Now</button><button type="button">Schedule</button></span><br/>
+			<a href="">#kisii</a><br />
 			People<br/>
 			<a href="">@Oksy</a>, <a href="">@user1</a>, <a href="">@pregnantMother</a>
 		</form>
