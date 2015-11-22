@@ -17,8 +17,11 @@ if(!$fgmembersite->CheckLogin())
 </head>
 <body>
 <div id='fg_membersite_content'>
+<div >
+	<p class="logo">Zote Web Management</p>
+</div>
 <ul>
-<li class="menuBar">
+<li class="menuBar" id="connect">
 	<a href="">Connect</a>
 </li>
 <li class="menuBar">
@@ -41,7 +44,8 @@ if(!$fgmembersite->CheckLogin())
 		<form id='login' action='<?php echo $fgmembersite->GetSelfScript(); ?>' method='post' accept-charset='UTF-8'>
 			<b>Broadcast A Message</b><br/>
 			<textarea name="messageText" class="message-text-field" rows="5" placeholder="Enter your message here"></textarea><br/>
-			<span style="float:left">Channels</span><span style="float:right"><button type="button">Send Now</button><button type="button">Schedule</button></span><br/>
+			<span style="float:left">Channels</span>
+			<span style="float:right"><button type="button">Send Now</button><button type="button">Schedule</button></span><br/>
 			<a href="">#expectantMothers</a>, <a href="">#newMothers</a><br />
 			People<br/>
 			<a href="">@Oksy</a>, <a href="">@user1</a>, <a href="">@pregnantMother</a>
@@ -94,7 +98,7 @@ if(!$fgmembersite->CheckLogin())
 	</div>
 	<div class="connect-right">
 		<b>Recent Broadcasts</b>
-		<div clas="broadcast-list">
+		<div class="broadcast-list">
 			<ul class="hub-list">
 				<li class="broadcast-list-item">
 					<a href="">#kisii</a> There will be a water filter workshop in your community next week. Don’t forget to sign up.<br/>

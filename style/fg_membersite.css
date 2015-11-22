@@ -176,6 +176,27 @@ div.day-number		{ background:#999; padding:5px; color:#fff; font-weight:bold; fl
 /* shared */
 td.calendar-day, td.calendar-day-np { width:40px; padding:5px; border-bottom:1px solid #999; border-right:1px solid #999; }
 
+.logo {
+   width: 100%;
+   font-size: 60px;
+   color: black;
+   margin: 0 auto;
+   text-align: center;
+   background-color: tomato;
+   padding: 41px 0;
+   font-family: sans-serif;
+}
+
+a {
+  text-decoration: none;
+  color: black; 
+}
+
+#connect {
+    background-color: lightgoldenrodyellow; 
+
+ }
+
 .menuBar {
 	float: left;
 	margin-right: 0px;
@@ -183,23 +204,29 @@ td.calendar-day, td.calendar-day-np { width:40px; padding:5px; border-bottom:1px
 	padding: 20px;
 	line-height: 10px;
 	list-style-type: none;
-	border: 1px solid black;
-	width: 100px;
+/*	border: 1px solid black;
+*/	width: 100px;
 	-moz-border-radius: 10px 10px 0px 0px;
 	-webkit-border-radius: 10px 10px 0px 0px;
 	-khtml-border-radius: 10px 10px 0px 0px;
 	border-radius: 10px 10px 0px 0px; 
 }
+  
+  .menuBar:hover {
+    background-color: lightgoldenrodyellow;
+  }
 
-.mainContent {
+
+ .mainContent {
 	margin-top: -22px;
 	padding: 20px;
 	height: 540px;
-	border:1px solid black;
-	-moz-border-radius: 10px;
+/*	border:1px solid black;
+*/	-moz-border-radius: 10px;
 	-webkit-border-radius: 10px;
 	-khtml-border-radius: 10px;
 	border-radius: 10px;
+  background-color: lightgoldenrodyellow;
 }
 
 .clear {
@@ -218,15 +245,27 @@ td.calendar-day, td.calendar-day-np { width:40px; padding:5px; border-bottom:1px
 	width:33%;	
 }
 
+.broadcast-list {
+  background-color: white;
+  border-radius: 10px;
+}
+
 .broadcast-list-item {
 		list-style-type: none;
 }
 
+  button {
+    border-radius: 5px;
+  }
+    button:hover{
+      color: tomato;
+    }
+
 .message-text-field {
 	width:100%;
 	padding: 5px;
-	border:1px solid black;
-	-moz-border-radius: 10px;
+/*	border:1px solid black;
+*/	-moz-border-radius: 10px;
 	-webkit-border-radius: 10px;
 	-khtml-border-radius: 10px;
 	border-radius: 10px;
@@ -247,11 +286,12 @@ td.calendar-day, td.calendar-day-np { width:40px; padding:5px; border-bottom:1px
 	height:300px;
 	width: 48%;
 	margin-right:10px;
-	border:1px solid black;
-	-moz-border-radius: 10px;
+/*	border:1px solid black;
+*/	-moz-border-radius: 10px;
 	-webkit-border-radius: 10px;
 	-khtml-border-radius: 10px;
 	border-radius: 10px;
+  background-color: white;
 }
 
 .hub-subscriber-list {
@@ -259,17 +299,20 @@ td.calendar-day, td.calendar-day-np { width:40px; padding:5px; border-bottom:1px
 	overflow-y:scroll;
 	height:300px;
 	width: 48%;
-	border:1px solid black;
-	-moz-border-radius: 10px;
+/*	border:1px solid black;
+*/	-moz-border-radius: 10px;
 	-webkit-border-radius: 10px;
 	-khtml-border-radius: 10px;
 	border-radius: 10px;
+  background-color: white;
 }
 
 .connect-list-item {
 	line-height: 5px;
 	list-style-type: none;
 }
+  
+ 
 
 .hub-list {
 	padding-left:10px;
